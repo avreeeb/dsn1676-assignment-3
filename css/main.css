@@ -28,6 +28,7 @@ text-size-adjust: 100%;
 width: 100%;
 height: 100vh;
 background-image: url(../images/stars.svg);
+-webkit-animation: stars 5s ease-in-out infinite alternate;
 animation: stars 5s ease-in-out infinite alternate;
 }
 
@@ -39,6 +40,7 @@ left: 150px;
 width: 256px;
 height: 256px;
 background-image: url(../images/asteroid.svg);
+-webkit-animation: asteroid-rotate 10s ease-in-out infinite alternate;
 animation: asteroid-rotate 10s ease-in-out infinite alternate;
 }
 
@@ -49,7 +51,20 @@ right: 150px;
 width: 256px;
 height: 256px;
 background-image: url(../images/ship.svg);
+-webkit-animation: bounce 5s linear infinite alternate;
 animation: bounce 5s linear infinite alternate;
+}
+
+@-webkit-keyframes asteroid-rotate {
+	
+	0% {
+		transform:rotate(0deg);
+	}
+	
+	100% { 
+		transform:rotate(360deg);
+	}
+		
 }
 
 @keyframes asteroid-rotate {
@@ -63,6 +78,39 @@ animation: bounce 5s linear infinite alternate;
 	}
 		
 }
+
+@-webkit-keyframes bounce {
+	
+	0% {
+		transform:translateY(0px);
+	
+	}
+	
+	50% { 
+		transform:translateY(200px);
+	}
+	
+	65% { 
+		transform:translateX(200px);
+		
+	}
+	
+	75% { 
+		transform:translateY(200px);
+	
+	}
+	
+	85.24% { 
+		transform:translateY(150px);
+	}
+	
+	
+	100% { 
+		transform:translateX(-200px);
+	}
+		
+}
+
 
 @keyframes bounce {
 	
@@ -92,6 +140,18 @@ animation: bounce 5s linear infinite alternate;
 	
 	100% { 
 		transform:translateX(-200px);
+	}
+		
+}
+
+@-webkit-keyframes stars {
+	
+	0% {
+		transform:scale(1,1);
+	}
+	
+	100% { 
+		transform:scale(2,2);
 	}
 		
 }
