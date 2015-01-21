@@ -58,11 +58,11 @@ animation: bounce 5s linear infinite alternate;
 @-webkit-keyframes asteroid-rotate {
 	
 	0% {
-		transform:rotate(0deg);
+		-webkit-transform:rotate(0deg);
 	}
 	
 	100% { 
-		transform:rotate(360deg);
+		-webkit-transform:rotate(360deg);
 	}
 		
 }
@@ -82,31 +82,31 @@ animation: bounce 5s linear infinite alternate;
 @-webkit-keyframes bounce {
 	
 	0% {
-		transform:translateY(0px);
+		-webkit-transform:translateY(0px);
 	
 	}
 	
 	50% { 
-		transform:translateY(200px);
+		-webkit-transform:translateY(200px);
 	}
 	
 	65% { 
-		transform:translateX(200px);
+		-webkit-transform:translateX(200px);
 		
 	}
 	
 	75% { 
-		transform:translateY(200px);
+		-webkit-transform:translateY(200px);
 	
 	}
 	
 	85.24% { 
-		transform:translateY(150px);
+		-webkit-transform:translateY(150px);
 	}
 	
 	
 	100% { 
-		transform:translateX(-200px);
+		-webkit-transform:translateX(-200px);
 	}
 		
 }
@@ -147,11 +147,11 @@ animation: bounce 5s linear infinite alternate;
 @-webkit-keyframes stars {
 	
 	0% {
-		transform:scale(1,1);
+		-webkit-transform:scale(1,1);
 	}
 	
 	100% { 
-		transform:scale(2,2);
+		-webkit-transform:scale(2,2);
 	}
 		
 }
