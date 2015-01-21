@@ -5,46 +5,24 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-  box-sizing: border-box;
+box-sizing: border-box;
 
-  background-color: #9f221b;
+-moz-text-size-adjust: 100%;
+-ms-text-size-adjust: 100%;
+-webkit-text-size-adjust: 100%;
+text-size-adjust: 100%;
+}
 }
 
 *, *::before, *::after {
-  box-sizing: inherit;
+	box-sizing: inherit;
 }
 
-img {
-  display: block;
-  margin: 0 auto;
+.stars {
 }
 
-.planet-wrapper {
-  margin: 8em 0;
-  position: relative;
+.asteroid {
 }
 
-.planet {
-  width: 400px;
-}
-
-.rocket {
-  width: 40px;
-  position: absolute;
-  left: calc(50% - 20px);
-  top: -40px;
-  animation: orbit 5s linear infinite;
-  transform-origin: center 240px;
-}
-
-@keyframes orbit {
-
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(-360deg);
-  }
-
+.space-ship {
 }
