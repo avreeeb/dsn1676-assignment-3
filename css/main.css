@@ -1,3 +1,7 @@
+html[Attributes Style] {
+-webkit-locale: en-ca;
+}
+
 @-moz-viewport { width: device-width; scale: 1; }
 @-ms-viewport { width: device-width; scale: 1; }
 @-o-viewport { width: device-width; scale: 1; }
@@ -15,6 +19,7 @@ box-sizing: border-box;
 text-size-adjust: 100%;
 }
 
+
 *, *::before, *::after {
 	box-sizing: inherit;
 }
@@ -23,7 +28,6 @@ text-size-adjust: 100%;
 width: 100%;
 height: 100vh;
 background-image: url(../images/stars.svg);
-
 }
 
 .asteroid {
@@ -33,6 +37,7 @@ left: 150px;
 width: 256px;
 height: 256px;
 background-image: url(../images/asteroid.svg);
+animation: asteroid-rotate 10s ease-in-out infinite alternate;
 }
 
 .space-ship {
@@ -42,4 +47,17 @@ right: 150px;
 width: 256px;
 height: 256px;
 background-image: url(../images/ship.svg);
+}
+
+@keyframes asteroid-rotate {
+	
+	0% {
+		transform:rotate(0deg);
+	}
+	
+	100% { 
+		transform:rotate(360deg);
+	}
+	
+	
 }
