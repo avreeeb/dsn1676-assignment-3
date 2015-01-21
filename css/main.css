@@ -91,7 +91,7 @@ animation: bounce 5s linear infinite alternate;
 	
 	
 	100% { 
-		transform:translateX(200px);
+		transform:translateX(-200px);
 	}
 		
 }
